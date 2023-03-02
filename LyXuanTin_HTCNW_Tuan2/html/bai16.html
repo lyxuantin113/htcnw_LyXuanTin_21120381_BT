@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Travel reservation form</h1>
+    <h3>* denotes mandotory</h3>
+    <br>
+    <form action="">
+        <div>
+            <label for="fName">Full name*:</label>
+        <input type="text" name="FullName" required id="fName" placeholder="FirstName LastName">
+        </div>
+        <div>
+            <label for="email">Email address*:</label>
+            <input type="email" name="Email" required id="email" placeholder="EMAIL_ADDRESS">
+        </div>
+        <div>
+            <label for="tourP">Select Tour Package*:</label>
+            <select name="SelectTour" id="tourP">
+                <option value="Goa">Goa</option>
+                <option value="VN">VN</option>
+            </select>
+        </div>
+        <div>
+            <label for="day">Arrival date*:</label>
+            <input type="text" name="ArrivalDay" required id="day" placeholder="m/d/y">
+        </div>
+        <div>
+            <label for="numPer">Numbers of Persons*:</label>
+            <input type="text" name="NumbersPersons" required id="numPer" placeholder="UNKNOWN_TYPE">
+        </div>
+        <div>
+            <label for="check">What would you want to avail?*</label>
+            Boarding <input type="checkbox" name="CheckAvail" required id="check">
+            <br>Fooding <input type="checkbox" name="CheckAvail" required id="check">
+            <br>Sight seeing <input type="checkbox" name="CheckAvail" required id="check">
+        </div>
+        <div>
+            <label for="codr">Discout Coupon <Code></Code>:</label>
+            <input type="text" name="Code" id="code" placeholder="UNKNOWN_TYPE">
+        </div>
+        <div>
+            <label for="tem">Tems and conditions*</label>
+            <input type="radio" name="Tem" id="tem">I agree
+            <input type="radio" name="Tem" id="tem">I disagree
+        </div>
+        <input type="submit" value="Conplete reservation">
+    </form>
+</body>
+</html>

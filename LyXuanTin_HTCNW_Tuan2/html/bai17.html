@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="21091671_TranHoaiPhong" content="form_html">
+    <title>Bai17</title>
+    <script>
+        function showNumber(newNumber) {
+            slidervalue.value = newNumber; 
+  }
+
+    </script>
+    
+</head>
+<body>
+    <div style="background-color: rgb(193, 183, 125);">
+        <h1 align="center">Survey Form</h1>
+        <p>If you are interested in purchaasing one of more of our products, before ordering please complete some or all of the following survey for our marketing departmant. Answering any question is optional, and all information will be kept strictly confidential. Thank very much for your time!</p>
+        <form action="">
+            <label for="name">1. What is your name?</label><br>
+            <input type="text" name="name" id="name" maxlength="30" size="30"><br><br>
+            <label for="">2. What is your date of birth?</label><br>
+            <label for="month">
+            Month:
+            <select name="month" id="month">
+                <option value="Thang1">January</option>
+                <option value="Thang2">February</option>
+                <option value="Thang3">March</option>
+                <option value="Thang4">Aprill</option>
+                <option value="Thang5">May</option>
+                <option value="Thang6">June</option>
+                <option value="Thang7">July</option>
+                <option value="Thang8">August</option>
+                <option value="Thang9">September</option>
+                <option value="Thang10">October</option>
+                <option value="Thang11">November</option>
+                <option value="Thang12">December</option>
+            </select>
+            </label>
+            <label for="date">
+            Date:
+            <select name="date" id="date">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            </label>
+            <label for="year">Year:
+            <input type="text" name="year" id="year" size="5">
+            </label><br><br>
+            <label for="address">3. What is your mailing address(if you would like to have a hard copy of our catalog sent to you)?<br>
+            <textarea name="address" id="address" cols="50" rows="4">Number/P.O. Boxr/oute:
+            Street/Avenue/Road:
+            City:
+            State/Zip:
+            </textarea>
+            </label><br><br>
+            <label for="email">4. What is your email address? <br>
+            <input type="email" name="email" id="email" maxlength="30"size=25 >
+            </label><br><br>
+            <label for="yesno">5. Have you viewed our online product catalog?</label><br>
+            <label for="yes"><input type="radio" name="yesno" id="yes">Yes</label>
+            <label for="no"><input type="radio" name="yesno" id="no">No</label><br><br>
+            <label for="">6. If so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all that apply.)</label><br>
+            <label for="option1"><input type="checkbox" name="option1" id="option1">VCR</label><br>
+            <label for="option2"><input type="checkbox" name="option2"id="option2">Big Screen TV</label><br>
+            <label for="option3"><input type="checkbox" name="option3" id="option3">Audio Equipment</label><br>
+            <label for="option4"><input type="checkbox" name="option4" id="option4">video Equipment</label><br>
+            <label for="option5"><input type="checkbox" name="option5" id="option5">Camera Equipment</label><br>
+            <label for="6"><input type="checkbox" name="option6" id="option6">Other <input type="text" name="text" id="text" size="30" placeholder="Please List"></label><br>
+            <label for="question">7. Do you have any questipms, comments or suggestions before proceeding to the Order Form? <br>
+            <textarea name="question" id="question" cols="40" rows="5">Your Input:</textarea><br><br>
+            <center>
+                <input type="submit" value="Send Form" name="submit" id="submit">
+                <input type="reset" value="Clear From" name="reset" id="reset">
+            </center>
+           </label>
+        </form>
+    </div>
+    <hr>
+    <h1 align="center">Cau B</h1>
+    <form action="">
+        <label for="browser">Browser:
+            <select name="browser" id="browser">
+                <option value="zero">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+            </select>
+        </label><br><br>
+        <label for="username">Username:
+            <input type="text" name="username" id="username" size="20" maxlength="20">
+        </label><br><br>
+        <label for="encryp">Encryption:
+            <select name="encryp" id="encryp">
+                <option value="2048">2048 (High Grade)</option>
+                <option value="other">Other</option>
+            </select>
+        </label><br><br>
+        <label for="slider">0<input type="range" name="slider" id="slider" min="0" max="100" value="50" step="10" oninput="showNumber(this.value)" >100</label><br><br>
+        <input type="text" name="slidervalue" id="slidervalue" value="50"><br><br>
+        <label for="date">Birthday:
+            <input type="date" name="date" id="date">
+        </label><br><br>
+        <label for="color">Select your favorite color:
+            <input type="color" name="color" id="color">
+        </label><br><br>
+        <label for="sn">Birthday (month and year): 
+            <input type="month" name="sn" id="sn">
+        </label><br><br>
+        <label for="week">Select a week:
+            <input type="week" name="week" id="week">
+        </label><br><br>
+        <label for="time">Select a time:
+            <input type="time" name="time" id="time">
+        </label><br><br>
+        <label for="datetime">Birthday (date and time):
+            <input type="datetime-local" name="datetime" id="datetime">
+        </label><br><br>
+        <label for="mail">E-mail:
+            <input type="email" name="mail" id="mail">
+        </label><br><br>
+        <label for="seach">Seach Google
+            <input type="search" name="seach" id="seach">
+        </label><br><br>
+        <label for="tel">Telephone:
+            <input type="tel" name="tel" id="tel" maxlength="15">
+        </label><br><br>
+        <label for="page">Add your homepage:
+            <input type="url" name="page" id="page">
+        </label><br><br>
+        <input type="submit" name="submit" id="submit" value="Submit">
+        <p><b>Note:</b> The datalist is no support in Safari or IE9 ( and earlier).</p>
+
+
+    </form>
+</body>
+</html>

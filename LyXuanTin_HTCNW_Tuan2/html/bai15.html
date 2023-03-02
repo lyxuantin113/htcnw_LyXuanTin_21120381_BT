@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #f1 label {
+            display: inline-block;
+            min-width: 100px;
+            margin-bottom: 8px;
+        }
+
+        #f2 label {
+            display: inline-block;
+            min-width: 160px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="">
+        <fieldset id="f1">
+            <legend>
+                Your Message:
+            </legend>
+            <div>
+                <label for="to">To</label>
+                <input type="text" name="To" id="to">
+            </div>
+            <div>
+                <label for="email">Your email</label>
+                <input type="email" required name="Email" id="email">
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <input type="text" required name="Message" id="message" style="height: 200px; width: 400px;">
+            </div>
+        </fieldset>
+        <fieldset id="f2">
+            <legend>
+                How you found us:
+            </legend>
+            <div style="margin-top: 4px;">
+                <label for="ask">How did uou hear of us?</label>
+                <select name="ask" id="ask" style="min-width: 170px; height: 22px;">
+                    <option value="Google">Google</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Youtube">Youtube</option>
+                </select>
+            </div>
+            <div>
+                <label for="newsletter">Newsletter</label>
+                <input type="checkbox" required name="Newsletter" id="newsletter"><span>Ensure this box is checked if you would like to receive email updates</span>
+            </div>
+        </fieldset>
+        <input type="submit" value="Send Message">
+    </form>
+    <br>
+    <hr>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName">
+            </div>
+            <div>
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" required name="Email" id="email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Competition Question</legend>
+            <label for="askTall">How tall is the Eiffel Tower in Paris, France?</label><br>
+            <input type="radio" name="askTall" id="askTall" value="584">584 <br>
+            <input type="radio" name="askTall" id="askTall" value="784">784 <br>
+            <input type="radio" name="askTall" id="askTall" value="984">984 <br>
+            <input type="radio" name="askTall" id="askTall" value="1184">1184 <br>
+        </fieldset>
+        <fieldset>
+            <legend>Tiebreaker Question</legend>
+            <label for="">In 25 words or less, say why you would like to win $10,000:</label>
+            <input type="text" name="Message2" style="height: 200px; width: 400px;">
+        </fieldset>
+        <fieldset>
+            <legend>Enter Competition</legend>
+            <input type="submit" value="Enter Conpetition">
+        </fieldset>
+    </form>
+</body>
+</html>

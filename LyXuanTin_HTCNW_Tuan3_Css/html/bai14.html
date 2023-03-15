@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="transition">
+    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL</p>
+    </div>
+    <style>
+        .transition{
+            background-color:green;
+            width: 350px;
+            height: 200px   ;
+            border: 3px dashed black;
+            border-radius: 10px;
+            margin: 200px 0 0  200px;
+            transition: all 2s linear;
+        }
+
+        .transition:hover{
+            transform: scale(2) rotate(360deg);
+            -webkit-transform: scale(2) rotate(360deg);
+            -moz-transform: scale(2) rotate(360deg);
+            -o-transform: scale(2) rotate(360deg);
+            -ms-transform: scale(2) rotate(360deg);
+            background: #1ec7e6;
+        }
+
+
+    </style>
+</body>
+</html>
